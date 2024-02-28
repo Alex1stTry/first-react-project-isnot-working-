@@ -1,0 +1,22 @@
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #151515;
+}
+
+.Header > h2 {
+    color: snow;
+}
+
+.addDiv {
+    display: flex;
+    gap: 10px;
+}
+
+.addDiv a {
+    color: snow;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+}
