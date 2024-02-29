@@ -1,11 +1,11 @@
 import React from 'react';
 
-const MoviePage = () => {
+const MovieCard = () => {
     return (
         <div>
-
+        card
         </div>
     );
 };
 
-export {MoviePage};
+export {MovieCard};

@@ -1,0 +1,15 @@
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+height: 230vh;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    height: 4vh;
+    gap: 10px;
+}
