@@ -4,10 +4,10 @@ const movies = '/discover/movie'
 
 
 const urls = {
-    movies:{
-        base:movies,
+        base: movies,
+        byId:(id:number)=> `${movies}/${id}`
 
-    },
+
 
 }
 export {baseURL,urls}

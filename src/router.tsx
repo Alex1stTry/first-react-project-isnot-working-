@@ -13,7 +13,7 @@ const router = createBrowserRouter([
                 path:'movies', element:<MoviesListPage/>
             },
             {
-                path:'movies/id' , element:<MovieCardPage/>
+                path:'movies/:id' , element:<MovieCardPage/>
             },
             {
             path:'genre/id', element:''

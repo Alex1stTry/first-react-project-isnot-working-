@@ -14,8 +14,6 @@ const Movies = () => {
         moviesService.getAll(page).then(({data}) => {
             const {results} = data
             setMovies(results)
-console.log(data)
-
         })
 
 
