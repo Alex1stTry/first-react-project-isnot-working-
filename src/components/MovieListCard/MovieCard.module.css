@@ -1,3 +1,9 @@
 .MovieCard{
-
+display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.PosterInfo{
+    display: flex;
 }

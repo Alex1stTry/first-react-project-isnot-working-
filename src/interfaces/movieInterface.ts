@@ -24,7 +24,7 @@ interface IMovieCard {
     adult: boolean;
     backdrop_path: string;
     belong_to_collections: boolean;
-    genre_ids: IMovieGenres[];
+    genres: IMovieGenres[];
     homepage: string;
     id: number;
     imdb_id: string;
@@ -47,9 +47,13 @@ interface IMovieCard {
     vote_count: string;
 }
 
+interface IGenre {
+    genres: IMovieGenres[]
+}
+
 interface IMovieGenres {
     id: number;
-    title: string;
+    name: string;
 }
 
 interface IProduction {
@@ -70,6 +74,30 @@ interface ILanguages {
     name: string;
 }
 
+interface IGenreFilm {
+    page: string
+    results: IResults[]
+
+}
+
+interface IResults {
+    adult: boolean;
+    backdrop_path: string;
+    genre_ids: number[];
+    id:number;
+    original_language:string;
+    original_title:string;
+    overview:string;
+    popularity: number;
+    poster_path: string;
+    release_date: string;
+    title: string;
+    video:boolean;
+    vote_average: number;
+    vote_count:number
+
+}
+
 export type {
     IMovie,
     IMovieList,
@@ -77,5 +105,8 @@ export type {
     IMovieGenres,
     IProduction,
     ICounty,
-    ILanguages
+    ILanguages,
+    IGenre,
+    IGenreFilm,
+    IResults
 }

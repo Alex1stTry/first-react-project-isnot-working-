@@ -1,0 +1,11 @@
+.Buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 200px;
+}
+.Buttons>button{
+    margin-top: 10px;
+    height: 50px;
+    width: 90px;
+}

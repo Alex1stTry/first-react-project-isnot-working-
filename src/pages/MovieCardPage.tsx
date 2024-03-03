@@ -15,7 +15,7 @@ const {id} = useParams();
 
     return (
         <div>
-            <MovieCard movieCard={movieCard}/>
+            {movieCard && <MovieCard movieCard={movieCard}/>}
         </div>
     );
 };

@@ -7,8 +7,8 @@ import {IMovieCard, IMovieList} from "../interfaces";
 
 
 const moviesService = {
-    getAll:(page:string):IRes<IMovieList> => apiService.get(urls.base,{params:{page}}),
-    getById:(id:number):IRes<IMovieCard> => apiService.get(urls.byId(+id))
+    getAll:(page:string):IRes<IMovieList> => apiService.get(urls.movies.base,{params:{page}}),
+     getById:(id:number):IRes<IMovieCard> => apiService.get(urls.movies.byId(+id))
 }
 
 export {moviesService}

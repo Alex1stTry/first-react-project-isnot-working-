@@ -8,12 +8,14 @@ const usePageQuery = () => {
         prevPage: () => {
             setQuery(prev => {
                 prev.set('page', (+prev.get('page') - 1).toString())
+                window.scrollTo({ top: 0, behavior: 'smooth' });
                 return prev
             })
         },
         nextPage: () => {
             setQuery(prev => {
                 prev.set('page', (+prev.get('page') +  1).toString())
+                window.scrollTo({ top: 0, behavior: 'smooth' });
                 return prev
             })
         },

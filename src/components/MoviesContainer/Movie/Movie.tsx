@@ -25,6 +25,8 @@ const Movie: FC<IProps> = ({movie}) => {
                 size={28}
                 activeColor="#eb8634"
                 value={movie.vote_average}
+                edit={false}
+                isHalf={true}
             />}</div>
             <h4>{title}</h4>
 
