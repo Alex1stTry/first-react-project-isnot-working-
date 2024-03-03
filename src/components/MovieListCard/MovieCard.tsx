@@ -1,11 +1,19 @@
-import React from 'react';
+import {FC} from "react";
 
-const MovieCard = () => {
+import {IMovieCard} from "../../interfaces";
+import css from './MovieCard.module.css'
+
+interface IProps {
+    movieCard: IMovieCard
+}
+
+const MovieCard: FC<IProps> = ({movieCard}) => {
+    console.log(movieCard)
+    // const {title, backdrop_path, genre_ids, overview, vote_average} = movieCard
     return (
-        <div>
-        card
+        <div className={css.MovieCard}>
+            <div>{}</div>
         </div>
     );
 };
-
-export {MovieCard};
+export {MovieCard}

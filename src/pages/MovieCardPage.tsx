@@ -2,17 +2,20 @@ import {useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 
 import {moviesService} from "../services/moviesService";
+import {MovieCard} from "../components/MovieListCard/MovieCard";
+import {IMovieCard} from "../interfaces";
+
 
 const MovieCardPage = () => {
 const {id} = useParams();
-console.log(id)
-    const [movieCard, setMovieCard] = useState(null)
+    const [movieCard, setMovie] = useState<IMovieCard>(null)
     useEffect(() => {
-        moviesService.getById(+(id)).then(({data})=>setMovieCard(data))
+       moviesService.getById(+id).then(({data})=>setMovie(data))
     }, []);
+
     return (
         <div>
-            MovieCardPage
+            <MovieCard movieCard={movieCard}/>
         </div>
     );
 };
