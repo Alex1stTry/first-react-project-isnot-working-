@@ -11,7 +11,6 @@ const Header = () => {
             <div className={css.addDiv}>
                 <NavLink to={''}>Movies</NavLink>
                 <NavLink to={'genres'}>Genres</NavLink>
-                <NavLink to={'/search'}>Search</NavLink>
             </div>
             <h2><span className={css.theme}>Theme </span>
                 <ThemSwitcher/></h2>

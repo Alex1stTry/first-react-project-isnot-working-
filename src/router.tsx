@@ -5,7 +5,6 @@ import {MovieCardPage} from "./pages/MovieCardPage";
 import {GenresPage} from "./pages/GenresPage";
 import {GenrePage} from "./pages/GenrePage";
 import React from "react";
-import {SearchPage} from "./pages/SearchPage";
 
 
 const router = createBrowserRouter([
@@ -27,10 +26,6 @@ const router = createBrowserRouter([
                         path:'/genres/:id', element:<GenrePage/>
                     }
                 ]
-            },
-
-            {
-                path: 'search', element: <SearchPage/>
             }
 
         ]
