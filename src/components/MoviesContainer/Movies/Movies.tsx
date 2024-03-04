@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import {moviesService} from "../../../services/moviesService";
-import {Movie} from "../Movie/Movie";
+
 import {IMovie} from "../../../interfaces";
 import css from './Movies.module.css'
 import {usePageQuery} from "../../../hooks/usePageQuery";
+import {Movie} from "../Movie";
 
 
 

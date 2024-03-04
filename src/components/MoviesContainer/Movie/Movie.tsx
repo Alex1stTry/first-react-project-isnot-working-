@@ -29,7 +29,6 @@ const Movie: FC<IProps> = ({movie}) => {
                 isHalf={true}
             />}</div>
             <h4>{title}</h4>
-
         </div>
     );
 };

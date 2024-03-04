@@ -1,8 +1,8 @@
-import React, {FC, useEffect, useState} from 'react';
+import React, {FC} from 'react';
 
 import css from './Buttons.module.css'
 
-import {IGenre, IMovieGenres} from "../../interfaces";
+import {IGenre} from "../../interfaces";
 import {Genre} from "./Genre";
 interface IProps{
     genres:IGenre

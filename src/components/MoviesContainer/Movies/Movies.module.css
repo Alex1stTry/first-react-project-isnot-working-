@@ -3,9 +3,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 15px;
-height: 230vh;
+    height: 230vh;
 }
-.buttons{
+
+.buttons {
     display: flex;
     justify-content: center;
     align-items: center;

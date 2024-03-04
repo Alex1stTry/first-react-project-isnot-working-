@@ -95,8 +95,12 @@ interface IResults {
     video:boolean;
     vote_average: number;
     vote_count:number
-
 }
+ interface ISearchWord{
+    word:string
+}
+
+
 
 export type {
     IMovie,
@@ -108,5 +112,6 @@ export type {
     ILanguages,
     IGenre,
     IGenreFilm,
-    IResults
+    IResults,
+    ISearchWord,
 }

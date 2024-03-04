@@ -4,6 +4,7 @@ const discover = '/discover'
 const movies = '/movie'
 const genre = '/genre'
 const list = '/list'
+const search='/search'
 
 
 const urls = {
@@ -15,8 +16,7 @@ const urls = {
     genres:{
       base:`${genre}${movies}${list}`,
         byGenre:`${discover}${movies}`
-    }
-
-
+    },
+    search:`${search}${movies}`
 }
 export {baseURL, urls}
